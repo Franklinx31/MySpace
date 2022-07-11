@@ -75,19 +75,19 @@ body {font-family:verdana;}
 
 .chicken {
 	background-color: lightpink;
-	margin : 0px 10px 15px 10px; /* up,right,down,left*/
+	margin-bottom: 15px; 
 	padding : 0.5% 2% 2% 2%;
 }
 
 .beef {
 	background-color: lightgreen;
-	margin : 0px 10px 15px 10px; /* up,right,down,left*/
+	margin-bottom: 15px;
 	padding : 0.5% 2% 2% 2%;
 }
 
 .sushi {
 	background-color: yellow;	
-	margin : 0px 10px 15px 10px; /* up,right,down,left*/
+	margin-bottom: 15px;
 	padding : 0.5% 2% 2% 2%;
 }
 
