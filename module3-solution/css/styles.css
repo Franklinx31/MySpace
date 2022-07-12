@@ -19,7 +19,6 @@ body {font-family:verdana;}
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
   margin-top: 0;
-  margin-bottom: 0;
   line-height: .75;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
@@ -43,14 +42,12 @@ body {font-family:verdana;}
   text-align: center;
 }
 #nav-list a:hover {
-  background: #E7E7E7;
-}
-#nav-list a span {
-  font-size: 1.8em;
+  background: #F8E8C4;
 }
 
+
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
+  border: 1.5px solid #CFA401;
 }
 .navbar-header button.navbar-toggle {
   clear: both;
