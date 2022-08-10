@@ -1,0 +1,72 @@
+
+/********** Menu Bar ***********/
+.menu {
+	background: #eeeeee;
+	background-repeat: repeat-x;
+	border: #e0e0e0 1px solid;
+}
+
+/* colocar cada opcion del menu al lado de otro */
+.nav > li { float:left; }
+
+/* eliminar estilos en las listas */
+ul, ol { list-style:none; }
+
+.nav li a {
+		color: #3a3a3a;
+		text-decoration:none;
+		padding: 10px 16px;
+		display:block;
+	}
+			
+	.nav li a:hover {background-color:#378c75; color: white}
+			
+	.nav li ul {
+		background-color:#eeeeee; 
+		margin: 0px;
+		padding: 0px;
+		display:none;
+		position:absolute;
+	}
+
+	.nav li:hover > ul { display:block; }
+/********** Menu Bar ***********/
+
+body{
+	font-family: 'Karla', sans-serif;
+	font-size:  16px;
+}
+
+/* EXTERNAL LINKS */
+a:link, a:visited,  a:active { color: white; text-decoration: none; }
+a:hover { color: #e2e2e2; text-decoration: none; }
+
+/********* BARRA SUPERIOR VERDE ********/
+.panel-header
+{
+	background: #378c75;
+	padding: 7px;
+}
+
+.panel-header-texts { float:right; font-size: 12px; color: white;}
+
+/* FOOTER */
+.panel-footer 
+{
+	background: #3a3a3a;
+	margin-top: 25px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	border-top: #378c75 5px solid;
+}
+
+.panel-footer div.row {
+  margin-bottom: 25px;
+}
+
+#footer-words
+{
+	color: #ffffff;
+	line-height: 1.6;
+}
+/********* PIE DE PAGINA ********/
