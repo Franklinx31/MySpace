@@ -2,6 +2,7 @@
 <html lang ="en">
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<tittle></tittle>
 	
@@ -13,7 +14,7 @@
 	<header class="panel-header">
 	<div class="container">
 	<div class="row">
-		<div class="panel-header-texts">
+		<div class="panel-superior-textos">
 		<span>
 		<div class="hidden-xs">
 			<img src="img/whatsapp-v2.svg"> <a target="_blank" href="https://wa.me/message/O5S3OZVI7SSDH1">809 401 2596</a> |
@@ -21,32 +22,33 @@
 			<img src="img/instagram-v2.svg"> <a target="_blank" href="https://www.instagram.com/fransa.shop/">fransa.shop</a>
 		</div>
 		<div class="visible-xs">
-			<a target="_blank" href="https://wa.me/message/O5S3OZVI7SSDH1"><img src="img/whatsapp-v2.svg"></a>&nbsp&nbsp
-			<a target="_blank" href="https://facebook.com/fransa.shopx3"><img src="img/facebook-v2.svg"></a>&nbsp&nbsp
+			<a target="_blank" href="https://wa.me/message/O5S3OZVI7SSDH1"><img src="img/whatsapp-v2.svg"></a>
+			<a target="_blank" shref="https://facebook.com/fransa.shopx3"><img src="img/facebook-v2.svg"></a>
 			<a target="_blank" href="https://www.instagram.com/fransa.shop/"><img src="img/instagram-v2.svg"></a>
 		</div>
 		</span>
+		</div>
 	</div>
 	</div>
-
-
-	</div>
-
-
 	</header>
 
-	<center><img src="img/logo.png" alt="logo" class="img-responsive"></center>
+	<center><img src="img/logo.png" class="img-responsive"></center>
 </head>
 
 <body>
-
 
 	<!--- BARRA DE MENU -->
 	<div class="menu">
 	<div class="container-2">
 		<ul class="nav">
-			<li><a href="index.html">Inicio</a></li>
-			<li><a href="" >Categorias</a>
+			 <input type="checkbox" id="check">
+			 <label for="check" class="checkbtn">
+			 	<img src="img/list.svg" class="visible-xs">
+			 </label>
+			 <div id="msg"></div>
+
+			<li><a id="hidden-menu" href="index.html">Inicio</a></li>
+			<li><a id="hidden-menu2" href="" >Categorias</a>
 				<ul>
 					<li><a href="">Accesorios</a></li>
 					<li><a href="">Adaptadores</a></li>
@@ -57,22 +59,21 @@
 					<li><a href="">Otros</a></li>
 				</ul>
 			</li>
-			<li><a href="html/nosotros.html">Sobre Nosotros</a></li>
-			<li><a href="#footer-words">Contacto</a></li>
+			<li><a id="hidden-menu3" href="html/nosotros.html">Sobre Nosotros</a></li>
+			<li><a id="hidden-menu4" href="#footer-words">Contacto</a></li>
+			
 		</ul>
 		</div>
 	</div>
 
 	<br>
-
 	<div class="foto-principal" class="col-sm-4">
 		<div class="container">
-			<div class="row">
-				<img src="img/test.png" class="img-responsive"></img>
-			</div>
+		<div class="row">
+			<img src="img/test.png" class="img-responsive"></img>
+		</div>
 		</div>
 	</div>
-
 	<br>
 
 	<!--- FOOTER o PIE DE PAGINA -->
@@ -85,7 +86,7 @@
 			<img src="img/telephone.svg"> Contacto: <a href="tel:+18094012596">809-401-2596</a><br>
 			<img src="img/whatsapp.svg"> 
 			WhatsApp: <a target="_blank" href="https://wa.me/message/O5S3OZVI7SSDH1">809-401-2596</a><br>
-			<img src="img/mail.svg"> E-mail:<br>
+			<img src="img/mail.svg"> E-mail: N/A<br>
 		</span>
 		<hr class="visible-xs">
 	</section>
@@ -102,5 +103,9 @@
 	</div> <!--- Cierre Class Container -->
 	</footer>
 
-	</body>
+	<!-- jQuery (Bootstrap JS plugins depend on it) -->
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/script.js"></script>
+</body>
 </html>

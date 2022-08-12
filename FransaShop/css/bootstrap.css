@@ -4244,6 +4244,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .container > .navbar-header,
+.container-2 > .navbar-header,
 .container-fluid > .navbar-header,
 .container > .navbar-collapse,
 .container-fluid > .navbar-collapse {
@@ -4252,6 +4253,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .container > .navbar-header,
+  .container-2 > .navbar-header,
   .container-fluid > .navbar-header,
   .container > .navbar-collapse,
   .container-fluid > .navbar-collapse {
@@ -6601,11 +6603,7 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (max-width: 767px) {
-  .visible-xs-block {
-    display: block !important;
-  }
-}
+
 @media (max-width: 767px) {
   .visible-xs-inline {
     display: inline !important;

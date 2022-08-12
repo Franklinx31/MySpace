@@ -1,4 +1,18 @@
 
+
+body{ font-family: 'Karla', sans-serif; font-size: 16px; }
+
+/********* BARRA SUPERIOR VERDE ********/
+.panel-header
+{
+	background: #378c75;
+	padding: 7px;
+}
+
+.panel-superior-textos { float:right; font-size: 12px; color: white; }
+
+.visible-xs > a { padding-left:  18px; }
+
 /********** Menu Bar ***********/
 .menu {
 	background: #eeeeee;
@@ -30,25 +44,45 @@ ul, ol { list-style:none; }
 	}
 
 	.nav li:hover > ul { display:block; }
+
+.checkbtn{
+	display: block;
+  float: right;
+  cursor: pointer;
+  margin-right: 10px;
+	padding: 3px;
+}
+
+#check { display: none; }
+
+/* removido de bootsrap para editarlo aqui con el icon de menu*/
+@media (max-width: 767px) {
+  .visible-xs-block {
+    display: block !important;
+  }   
+  #hidden-menu {
+
+  }
+  #hidden-menu2 {
+
+  }
+  #hidden-menu3 {
+
+  }
+  #hidden-menu4 {
+
+  }
+}
+
 /********** Menu Bar ***********/
 
-body{
-	font-family: 'Karla', sans-serif;
-	font-size:  16px;
-}
+
 
 /* EXTERNAL LINKS */
 a:link, a:visited,  a:active { color: white; text-decoration: none; }
 a:hover { color: #e2e2e2; text-decoration: none; }
 
-/********* BARRA SUPERIOR VERDE ********/
-.panel-header
-{
-	background: #378c75;
-	padding: 7px;
-}
 
-.panel-header-texts { float:right; font-size: 12px; color: white;}
 
 /* FOOTER */
 .panel-footer 
