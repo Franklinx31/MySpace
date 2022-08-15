@@ -46,11 +46,10 @@ ul, ol { list-style:none; }
 	.nav li:hover > ul { display:block; }
 
 .checkbtn{
-	display: block;
   float: right;
   cursor: pointer;
   margin-right: 10px;
-	padding: 3px;
+	padding-top: 5px;
 }
 
 #check { display: none; }
@@ -61,17 +60,36 @@ ul, ol { list-style:none; }
     display: block !important;
   }   
   #hidden-menu {
-
+  	display: none;
   }
   #hidden-menu2 {
-
+  	display: none;
   }
   #hidden-menu3 {
-
+  	display: none;
   }
   #hidden-menu4 {
-
+  	display: none;
   }
+
+  .nav > li {
+  	width: 100%;
+  	display: block;
+  	background-color: #3a3a3a;
+  	text-align: center;
+  }
+  .nav > li a { color: white; }
+
+  .nav > li ul {
+  	width: 100%;
+  	position: relative;
+  	background-color: #5A5959;
+  	color: white;
+  	float: right;
+  }
+
+  .nav li:hover > ul { display:block; }
+
 }
 
 /********** Menu Bar ***********/
