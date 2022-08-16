@@ -1,5 +1,4 @@
 
-
 /* ocultar y mostrar las opciones en nuestro menu */
 var checkbox = document.getElementById("check");
 checkbox.addEventListener("change", validaCheckbox, false);
@@ -7,21 +6,32 @@ function validaCheckbox()
 {
   var checked = checkbox.checked;
   if(checked) {
-    document.getElementById("hidden-menu").style.display = "block";
-    document.getElementById("hidden-menu2").style.display = "block";
-    document.getElementById("hidden-menu3").style.display = "block";
-    document.getElementById("hidden-menu4").style.display = "block";
+    $(".nav #hidden-menu, .nav #hidden-menu2, .nav #hidden-menu3, .nav #hidden-menu4").slideDown("slow");
+    $(".nav #hidden-menu, .nav #hidden-menu2, .nav #hidden-menu3, .nav #hidden-menu4").css("display","block");
   }
-  else {
-  	document.getElementById("hidden-menu").style.display = "none";
-    document.getElementById("hidden-menu2").style.display = "none";
-    document.getElementById("hidden-menu3").style.display = "none";
-    document.getElementById("hidden-menu4").style.display = "none";
-  }
+  else $(".nav #hidden-menu, .nav #hidden-menu2, .nav #hidden-menu3, .nav #hidden-menu4").slideToggle("slow");
 }
 
+// ocultar y mostrar submenu
+$(document).ready(function(){  
+  $(".nav .submenu").click(function(){
+    $(".nav .submenu .children").slideToggle("1000");
+    $(".nav .submenu").css("background-color", "#5A5959");
+  });
+  // Si el submenu esta abierto, se cerrara.
+  $(".nav .checkbtn").click(function () {
+    $(".nav .submenu .children").slideUp("slow");
+  });
+  //
+  $(".nav #hidden-menu4").click(function () {
+    $(".nav #hidden-menu, .nav #hidden-menu2, .nav #hidden-menu3, .nav #hidden-menu4, .nav .submenu .children").slideUp("slow");
+  });
+});
 
-
-
-
-// mostrar y ocultar submenu con jquery
+$(window).resize(function() {
+  if ($(this).width() < 767) {
+  $(".nav #hidden-menu, .nav #hidden-menu2, .nav #hidden-menu3, .nav #hidden-menu4, .nav .submenu .children").slideUp("slow");
+  } else {
+    $(".nav #hidden-menu, .nav #hidden-menu2, .nav #hidden-menu3, .nav #hidden-menu4").slideDown("fast");
+  }
+});

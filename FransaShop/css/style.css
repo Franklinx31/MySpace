@@ -87,10 +87,14 @@ ul, ol { list-style:none; }
   	color: white;
   	float: right;
   }
+	.nav .submenu a:focus { background-color:#378c75; }
 
-  .nav li:hover > ul { display:block; }
+  .nav li:hover > .children { display:none; }
+
+  .nav li ul li a:hover {background-color:#4CB69A; }
 
 }
+
 
 /********** Menu Bar ***********/
 
