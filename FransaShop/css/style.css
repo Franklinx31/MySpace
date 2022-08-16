@@ -92,7 +92,6 @@ ul, ol { list-style:none; }
   .nav li:hover > .children { display:none; }
 
   .nav li ul li a:hover {background-color:#4CB69A; }
-
 }
 
 
