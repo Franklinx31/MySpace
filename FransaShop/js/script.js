@@ -12,6 +12,83 @@ function validaCheckbox()
   else $(".nav #hidden-menu, .nav #hidden-menu2, .nav #hidden-menu3, .nav #hidden-menu4").slideToggle("slow");
 }
 
+//////////// ocultar y mostrar categorias //////////
+
+function show_categories(option) 
+{
+  if ( option == "Accesorios") { 
+    $(".accesorios").css("display","block"); 
+    $(".audifonos").css("display","none"); 
+    $(".adaptadores").css("display","none");
+    $(".cargadores").css("display","none"); 
+    $(".fires-tv").css("display","none"); 
+    $(".relojes").css("display","none"); 
+    $(".otros").css("display","none"); 
+    console.log(option);
+  }
+  else if ( option == "Adaptadores") {
+    $(".accesorios").css("display","none"); 
+    $(".audifonos").css("display","none"); 
+    $(".adaptadores").css("display","block");
+
+    $(".cargadores").css("display","none"); 
+    $(".fires-tv").css("display","none"); 
+    $(".relojes").css("display","none"); 
+    $(".otros").css("display","none"); 
+    console.log(option);
+  }
+  else if ( option == "Audifonos") {
+    $(".accesorios").css("display","none"); 
+    $(".audifonos").css("display","block");  
+    $(".adaptadores").css("display","none");
+    $(".cargadores").css("display","none"); 
+    $(".fires-tv").css("display","none"); 
+    $(".relojes").css("display","none"); 
+    $(".otros").css("display","none"); 
+    console.log(option);
+  }
+  else if ( option == "Cargadores") {
+    $(".accesorios").css("display","none"); 
+    $(".audifonos").css("display","none"); 
+    $(".adaptadores").css("display","none");
+    $(".cargadores").css("display","none"); 
+    $(".fires-tv").css("display","none"); 
+    $(".relojes").css("display","none"); 
+    $(".otros").css("display","none"); 
+    console.log(option);
+  }
+  else if ( option == "Convertidor TV-Smart TV") {  
+    $(".accesorios").css("display","none"); 
+    $(".audifonos").css("display","none"); 
+    $(".adaptadores").css("display","none");
+    $(".cargadores").css("display","none"); 
+    $(".fires-tv").css("display","inline-block"); 
+    $(".relojes").css("display","none"); 
+    $(".otros").css("display","none"); 
+    console.log(option);
+  }
+  else if ( option == "Relojes inteligentes") {
+    $(".accesorios").css("display","none"); 
+    $(".audifonos").css("display","none"); 
+    $(".adaptadores").css("display","none");
+    $(".cargadores").css("display","none"); 
+    $(".fires-tv").css("display","none"); 
+    $(".relojes").css("display","none"); 
+    $(".otros").css("display","none"); 
+    console.log(option);
+  }
+  else {
+    $(".accesorios").css("display","none"); 
+    $(".audifonos").css("display","none"); 
+    $(".adaptadores").css("display","none");
+    $(".cargadores").css("display","none"); 
+    $(".fires-tv").css("display","none"); 
+    $(".relojes").css("display","none"); 
+    $(".otros").css("display","none"); 
+    console.log(option);
+  }
+}
+
 // ocultar y mostrar submenu
 $(document).ready(function(){  
   $(".nav .submenu").click(function(){
@@ -23,13 +100,16 @@ $(document).ready(function(){
     $(".nav .submenu .children").slideUp("slow");
   });
   //
-  $(".nav #hidden-menu4").click(function () {
-    $(".nav #hidden-menu, .nav #hidden-menu2, .nav #hidden-menu3, .nav #hidden-menu4, .nav .submenu .children").slideUp("slow");
-  });
 });
 
 $(window).resize(function() {
   if ($(this).width() < 767) {
+    $(".nav #hidden-menu4").click(function () {
+      $(".nav #hidden-menu, .nav #hidden-menu2, .nav #hidden-menu3, .nav #hidden-menu4, .nav .submenu .children").slideUp("slow");
+    });
+
+
+
   $(".nav #hidden-menu, .nav #hidden-menu2, .nav #hidden-menu3, .nav #hidden-menu4, .nav .submenu .children").slideUp("slow");
   } else {
     $(".nav #hidden-menu, .nav #hidden-menu2, .nav #hidden-menu3, .nav #hidden-menu4").slideDown("fast");
