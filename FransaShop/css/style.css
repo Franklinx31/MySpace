@@ -9,6 +9,143 @@ body{ font-family: 'Karla', sans-serif; font-size: 16px; }
 .visible-xs > a { padding-left: 13px; }
 
 /*****************************************************************************/
+/*************************** SUBMENU CATEGORIAS *****************************/
+
+.category-tile img { width: 100%; height: 100%; }
+
+@media (min-width: 471px) {
+	.category-tile {
+		position: relative;
+		border: 1px solid #000;
+		overflow: hidden;
+		width: 200px;
+		height: 200px;
+		margin-bottom: 3px;
+		display: inline-block;
+	}
+
+	.category-tile span {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		text-align: center;
+		background-color: #000;
+		color: #fff;
+		opacity:  .8;
+	}
+
+	.category-tile:hover { box-shadow: 0 1px 5px 1px #378c75; }
+
+	.category-container {
+	  width: 200px;
+		height: 220px;
+		margin: 0 10px 25px 10px;
+		text-align: center;
+		display: inline-block;
+	}
+
+	.category-prize {
+		color: white;
+		background-color: #378C75;
+		padding: 5px 12px;
+		padding: 5px 12px 8px;
+		border-radius:2em;
+	}
+
+	.pulsera-applewatch:hover {
+	 	padding-left:200px; 
+	  background-image: url(../img/items/pa-2x300.png);
+	  background-size: 200px 200px;
+	}
+
+	.ventilador-usb:hover { 
+	 	padding-left:200px; 
+	  background-image: url(../img/items/ventilador-2x300.jpg);
+	  background-size: 200px 200px;
+	}
+
+	.iphone-jack:hover {     
+	 	padding-left:200px; 
+	  background-image: url(../img/items/split2-300x300.jpg);
+	  background-size: 200px 200px;
+	}
+
+	.audifonos:hover {   
+	 	padding-left:200px; 
+	  background-image: url(../img/items/au1-300x300.jpg);
+	  background-size: 200px 200px;
+	}
+
+	.airpods:hover { 
+	 	padding-left:200px; 
+	  background-image: url(../img/items/ap1-300x300.jpg);
+	  background-size: 200px 200px;
+	}
+
+	.poweradd:hover {    
+	 	padding-left:200px; 
+	  background-image: url(../img/items/poweradd2-300x300.jpg);
+	  background-size: 200px 200px;
+	}
+
+	.anker-sound-core:hover {    
+	 	padding-left:200px; 
+	  background-image: url(../img/items/sc2-300x300.jpg);
+	  background-size: 200px 200px;
+	}
+
+	.p20:hover {   
+	 	padding-left:200px; 
+	  background-image: url(../img/items/p20-2x300.jpg);
+	  background-size: 200px 200px;
+	}
+}
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 470px)  {
+  .category-tile {
+		position: relative;
+		border: 1px solid #000;
+		overflow: hidden;
+		width: 180px;
+		height: 180px;
+		margin-bottom: 3px;
+		display: inline-block;
+	}
+
+	.category-tile span {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		text-align: center;
+		font-size: 14px;
+		background-color: #000;
+		color: #fff;
+		opacity:  .8;
+	}
+
+	.category-tile:active { box-shadow: 0 1px 5px 1px #378c75; }
+
+	.category-container {
+	  width: 180px;
+		height: 200px;
+		margin: 0 10px 25px 10px;
+		text-align: center;
+		display: inline-block;
+	}
+
+	.category-prize {
+		color: white;
+		background-color: #378C75;
+		padding: 5px 12px;
+		padding: 5px 12px 8px;
+		border-radius:2em;
+	}
+}
+
+/*****************************************************************************/
 /*************************** BARRA DE MENU ***********************************/
 
 .menu { background: #eeeeee; background-repeat: repeat-x; border: #e0e0e0 1px solid; }
@@ -52,7 +189,6 @@ ul, ol { list-style:none; } /* eliminar estilos en las listas */
 
 #check { display: none; }
 
-/* removido de bootsrap para editarlo aqui con el icon de menu*/
 @media (max-width: 767px) {
   .visible-xs-block {
     display: block !important;
@@ -132,135 +268,6 @@ a:hover { color: #e2e2e2; text-decoration: none; }
 .submenu-texts-2 { text-align: left; }
 .submenu-texts-3 { background-color: #F5F3F3; margin-top: 10px; margin-bottom: 10px; padding: 5px; font-weight: bolder; font-size: 19px;}
 
-/*****************************************************************************/
-/*************************** SUBMENU CATEGORIAS ****************************/
-
-
-.category-tile {
-	position: relative;
-	border: 1px solid #000;
-	overflow: hidden;
-	width: 200px;
-	height: 200px;
-	margin-bottom: 3px;
-	display: inline-block;
-}
-
-.category-tile span {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 100%;
-	text-align: center;
-	background-color: #000;
-	color: #fff;
-	opacity:  .8;
-}
-
-.category-tile img 
-{
-	width: 100%;
-	height: 100%;
-}
-
-.category-tile:hover { box-shadow: 0 1px 5px 1px #378c75; }
-
-.category-container {
-  width: 200px;
-	height: 220px;
-	margin: 0 10px 25px 10px;
-	text-align: center;
-	display: inline-block;
-}
-
-.category-prize {
-	color: white;
-	background-color: #378C75;
-	padding: 5px 12px;
-	padding: 5px 12px 8px;
-	border-radius:2em;
-}
-
-.pulsera-applewatch:hover {
-	box-sizing:border-box;
-  display:block;
-  width:200px;       
-  height:200px;     
- 	padding-left:200px; 
-  background-image: url(../img/items/pa-2x300.png);
-  background-size: 200px 200px;
-}
-
-.ventilador-usb:hover {
-	box-sizing:border-box;
-  display:block;
-  width:200px;       
-  height:200px;     
- 	padding-left:200px; 
-  background-image: url(../img/items/ventilador-2x300.jpg);
-  background-size: 200px 200px;
-}
-
-.iphone-jack:hover {
-	box-sizing:border-box;
-  display:block;
-  width:200px;       
-  height:200px;     
- 	padding-left:200px; 
-  background-image: url(../img/items/split2-300x300.jpg);
-  background-size: 200px 200px;
-}
-
-.audifonos:hover {
-	box-sizing:border-box;
-  display:block;
-  width:200px;       
-  height:200px;     
- 	padding-left:200px; 
-  background-image: url(../img/items/au1-300x300.jpg);
-  background-size: 200px 200px;
-}
-
-.airpods:hover {
-	box-sizing:border-box;
-  display:block;
-  width:200px;       
-  height:200px;     
- 	padding-left:200px; 
-  background-image: url(../img/items/ap1-300x300.jpg);
-  background-size: 200px 200px;
-}
-
-.poweradd:hover {
-	box-sizing:border-box;
-  display:block;
-  width:200px;       
-  height:200px;     
- 	padding-left:200px; 
-  background-image: url(../img/items/poweradd2-300x300.jpg);
-  background-size: 200px 200px;
-}
-
-.anker-sound-core:hover {
-	box-sizing:border-box;
-  display:block;
-  width:200px;       
-  height:200px;     
- 	padding-left:200px; 
-  background-image: url(../img/items/sc2-300x300.jpg);
-  background-size: 200px 200px;
-}
-
-.p20:hover {
-	box-sizing:border-box;
-  display:block;
-  width:200px;       
-  height:200px;     
- 	padding-left:200px; 
-  background-image: url(../img/items/p20-2x300.jpg);
-  background-size: 200px 200px;
-}
-
 
 /*****************************************************************************/
 /************************** FOOTER O PIE DE PAGINA ****************************/
@@ -277,3 +284,5 @@ footer
 footer div.row { margin-bottom: 25px; }
 
 #footer-words { color: #ffffff; line-height: 1.6; }
+
+
