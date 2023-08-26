@@ -90,29 +90,44 @@ function show_categories(option)
   }
 }
 
+
 // ocultar y mostrar submenu
-$(document).ready(function(){  
-  $(".nav .submenu").click(function(){
-    $(".nav .submenu .children").slideToggle("1000");
-    $(".nav .submenu").css("background-color", "#5A5959");
+var contador = 1;
+$(document).ready(function() {  
+  $(".submenu_xs .submenu2").click(function() {
+    $(".submenu_xs .submenu2 .children2").slideToggle("1000");
+    $(".submenu_xs .submenu2 .children2").css("background-color", "#ffffff");
   });
-  // Si el submenu esta abierto, se cerrara.
-  $(".nav .checkbtn").click(function () {
-    $(".nav .submenu .children").slideUp("slow");
+  // cerrar categoria de productos si esta abierta
+  $(".checkbtn").click(function () {
+    $(".submenu_xs .submenu2 .children2").slideUp("slow");
   });
-  //
+
+  // mostrar y ocultar submenu al hacer clic
+  $(".checkbtn").click(function(){
+    if ( contador == 1 ) { 
+      $(".submenu_xs").css("display","block"); 
+      contador = 0;
+    } else { 
+      contador = 1;
+      $(".submenu_xs").css("display","none");
+      }
+  });
 });
+
+// cuando el tamano de la pantalla sea de 767 o menos, ocultara la barra de menu
+// cuando el tamano de la pantalla sea mayor a 767, ocultara el submenu del encabezado y mostrara la barra de menu
 
 $(window).resize(function() {
   if ($(this).width() < 767) {
-    $(".nav #hidden-menu4").click(function () {
-      $(".nav #hidden-menu, .nav #hidden-menu2, .nav #hidden-menu3, .nav #hidden-menu4, .nav .submenu .children").slideUp("1000");
+    $(".nav #hidden-menu").click(function () {
+      $(".nav #hidden-menu, .nav .submenu .children").slideUp("1000");
     });
 
-
-
-  $(".nav #hidden-menu, .nav #hidden-menu2, .nav #hidden-menu3, .nav #hidden-menu4, .nav .submenu .children").slideUp("1000");
+  $(".nav #hidden-menu, .nav .submenu .children").slideUp("1000");
   } else {
-    $(".nav #hidden-menu, .nav #hidden-menu2, .nav #hidden-menu3, .nav #hidden-menu4").slideDown("1000");
+    $(".nav #hidden-menu").slideDown("1000");
+    $(".submenu_xs .children2").css("display","none");
+    $(".submenu_xs").css("display","none");
   }
 });
